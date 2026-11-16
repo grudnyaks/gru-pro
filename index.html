@@ -51,4 +51,8 @@ footer{padding:40px 0 60px;border-top:1px solid rgba(255,255,255,.1);color:#7d78
 <script>try{new QRCode(document.getElementById('qrc'),{text:'https://gru-pro.ru/',width:360,height:360,colorDark:'#111111',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});}catch(e){document.getElementById('qrc').innerHTML='<p style="padding-top:64px;font-family:Roboto Mono,monospace">gru-pro.ru</p>';}
 (function(){if(/iPhone|iPad|iPod/.test(navigator.userAgent||'')){document.querySelectorAll('[data-os]').forEach(function(b){b.click&&b.dataset.os==='ios'&&b.click();});var d=document.getElementById('dl');if(d){d.href='#install';d.textContent='Установить на iPhone';}}})();
 document.querySelectorAll('[data-os]').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('[data-os]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});document.querySelectorAll('[data-pane]').forEach(function(p){p.hidden=p.dataset.pane!==b.dataset.os});});});
-</script></body></html>
+</script><script>/* ссылка на APK с номером версии в имени файла; если GitHub не ответил — остаётся постоянная ссылка */
+fetch('https://api.github.com/repos/grudnyaks/klapp-guide_web/releases/latest').then(r=>r.ok?r.json():null).then(j=>{if(!j)return;const a=(j.assets||[]).find(x=>/^KLAPP-Pro-v[\d.]+\.apk$/.test(x.name));if(!a)return;
+document.querySelectorAll('a[href$="/releases/latest/download/KLAPP-Pro.apk"]').forEach(l=>{l.href=a.browser_download_url;l.title=a.name;});
+const v=a.name.match(/v([\d.]+)\.apk/)[1],d=document.getElementById('dl');if(d&&!document.getElementById('dlv')){const s=document.createElement('small');s.id='dlv';s.textContent='Версия '+v;s.style.cssText='display:block;margin-top:8px;opacity:.6;font-size:13px';d.parentNode.after(s);}}).catch(()=>{});</script>
+</body></html>
