@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>KLAPP Pro — установить приложение</title><link rel="icon" href="https://app.gru-pro.ru/icon-192.png">
+<title>KLAPP Pro — установить приложение</title><link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet"><link rel="icon" href="https://app.gru-pro.ru/icon-192.png">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet"><style>
 *{box-sizing:border-box}body{margin:0;overflow-x:hidden;background:#0d0d0f;color:#f2efea;font:300 17px/1.6 Jost,system-ui,sans-serif}
 a{color:inherit}.mono{font-family:"Roboto Mono",monospace;letter-spacing:.06em}.w{max-width:1120px;margin:0 auto;padding:0 24px}
@@ -33,8 +33,22 @@ ol.st li::before{content:counter(s);position:absolute;left:0;top:11px;width:30px
 .code p{color:#b8b3ab;margin:0 0 10px}.code b{color:#fff;font-weight:400}
 footer{padding:40px 0 60px;border-top:1px solid rgba(255,255,255,.1);color:#7d786f;font-size:14px}footer p:first-child{color:#ff4438;font-size:20px;margin:0 0 8px}
 @media(max-width:900px){h1{max-width:none}.ph{position:relative;right:auto;top:0;width:100%;height:440px;margin-top:30px}.ph img{width:200px}.ph .a{right:auto;left:4%}.ph .b{right:4%}.nums{grid-template-columns:1fr 1fr}.list,.inst{grid-template-columns:1fr}.hero{min-height:0}}
+
+/* о бренде — светлая вкладка */
+.hnav{display:flex;gap:22px;align-items:center}.hnav a{font-size:13px;text-decoration:none;color:#b8b3ab}
+.brand{background:#f6f1ec;color:#1d1d1b;margin:40px calc(50% - 50vw) 0;padding:80px calc(50vw - 50%) 70px}
+.brand .k{color:#e0362b}.brand h2{color:#1d1d1b}.brand p{color:#4a453f}
+.brand .lo{font:italic 400 21px/1.5 Lora,Georgia,serif;color:#6b6258;max-width:34em;margin:0 0 34px}
+.bgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px 48px}
+.bnums{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #1d1d1b;margin:36px 0}
+.bnums div{padding:20px 0}.bnums b{display:block;font:300 46px/1 Jost}.bnums span{font-size:14px;color:#6b6258}
+.bkap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0 10px}.bkap div{background:#fff;border-radius:22px;padding:24px}.bkap b{display:block;color:#e0362b;font:500 19px Jost}.bkap i{display:block;font:italic 16px Lora,Georgia,serif;color:#6b6258;margin-bottom:10px}.bkap span{font-size:15.5px;color:#4a453f}
+.bct{background:#fff;border-radius:28px;padding:34px;margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.bct .row{display:grid;grid-template-columns:110px 1fr;gap:8px 12px;font-size:16px}.bct .row b{font-weight:400;color:#8e8981}
+.bct .btns a{color:#1d1d1b;border-color:rgba(0,0,0,.18);background:#fff}.bct .btns a.red{color:#fff;background:#ff4438;border-color:#ff4438}
+@media(max-width:760px){.bgrid,.bkap,.bct{grid-template-columns:1fr}.bnums{grid-template-columns:1fr 1fr}.hnav{gap:14px}}
 </style></head><body><div style="position:relative;overflow:hidden"><div class="glow"></div><div class="w">
-<header><b>KLAPP<i class="mono">PRO</i></b><a class="mono" href="#install" style="font-size:13px;text-decoration:none;color:#b8b3ab">УСТАНОВИТЬ</a></header>
+<header><b>KLAPP<i class="mono">PRO</i></b><span class="hnav"><a class="mono" href="#brand">О&nbsp;БРЕНДЕ</a><a class="mono" href="#install">УСТАНОВИТЬ</a></span></header>
 <div class="hero"><p class="k mono">Для&nbsp;косметологов-партнёров KLAPP</p><h1>Наука ухода за&nbsp;кожей <em>в&nbsp;вашем телефоне</em></h1>
 <p class="lead">Ассортимент, подбор ухода, клиенты и&nbsp;заказы — в&nbsp;одном приложении. Работает без&nbsp;интернета.</p>
 <div class="btns"><a class="btn red" id="dl" href="https://github.com/grudnyaks/klapp-guide_web/releases/latest/download/KLAPP-Pro.apk">Скачать для&nbsp;Android</a><a class="btn" href="#install">Установить на&nbsp;iPhone</a></div>
@@ -47,6 +61,15 @@ footer{padding:40px 0 60px;border-top:1px solid rgba(255,255,255,.1);color:#7d78
 <div data-pane="ios" hidden><ol class="st"><li><b>Откройте app.gru-pro.ru в&nbsp;Safari</b> именно в&nbsp;Safari.</li><li><b>«Поделиться» → «На&nbsp;экран „Домой“»</b> квадрат со&nbsp;стрелкой внизу экрана.</li><li><b>Открывайте значком</b> и&nbsp;вставьте сообщение с&nbsp;кодом от&nbsp;куратора.</li></ol><a class="btn" href="https://app.gru-pro.ru/">Открыть app.gru-pro.ru</a></div>
 <p class="fine">Клиенты и&nbsp;заметки хранятся только на&nbsp;вашем телефоне. Приложение само делает копию раз в&nbsp;неделю, а&nbsp;раз в&nbsp;месяц сохраняйте копию вне телефона: Кабинет → «Сохранить копию».</p></div>
 <div class="card code"><p class="k mono">Код доступа</p><p><b>Полный доступ — по&nbsp;личному коду</b> от&nbsp;вашего куратора KLAPP. Без&nbsp;кода открыт просмотр каталога.</p><p>Код личный: если он окажется у&nbsp;другого человека, доступ отключат у&nbsp;обоих.</p><div class="qrw"><div class="qr"><div id="qrc"></div></div><p class="mono" style="margin-top:10px;font-size:13px">gru-pro.ru</p></div></div></div></section>
+<section class="brand" id="brand"><p class="k mono">О&nbsp;бренде</p><h2>KLAPP&nbsp;— наука ухода за&nbsp;кожей из&nbsp;Германии</h2>
+<p class="lo">Создавать уникальные продукты на&nbsp;основе научного опыта для&nbsp;здоровья и&nbsp;красоты кожи&nbsp;— и&nbsp;применять их&nbsp;как&nbsp;в&nbsp;практике косметолога, так и&nbsp;в&nbsp;домашнем уходе.</p>
+<div class="bgrid"><p>Бренд основал доктор Герхард Клапп в&nbsp;1980 году. Всемирно признанный специалист в&nbsp;эстетической косметологии, натуропатии и&nbsp;создании косметических средств, он&nbsp;первым в&nbsp;мире получил высокоочищенный клеточный экстракт для&nbsp;применения в&nbsp;косметике.</p>
+<p>Головной офис, лаборатории и&nbsp;производство&nbsp;— Хессиш-Лихтенау, Германия: стандарт GMP, сертификация ISO 9001. Профессиональные препараты, процедурные наборы и&nbsp;27 линий домашнего ухода&nbsp;— одна система от&nbsp;кабинета до&nbsp;дома.</p></div>
+<div class="bnums"><div><b>1980</b><span>год основания, Германия</span></div><div><b>35 000</b><span>салонов и&nbsp;клиник работают с&nbsp;KLAPP</span></div><div><b>60+</b><span>стран присутствия</span></div><div><b>100%</b><span>vegan-формулы с&nbsp;2022 года</span></div></div>
+<p class="k mono">KAP Complex · каждая формула работает по&nbsp;трём направлениям</p><div class="bkap"><div><b>Keep</b><i>сохраняем</i><span>Снабжаем кожу ингредиентами для&nbsp;нормального функционирования и&nbsp;сохраняем её&nbsp;собственные ценные вещества.</span></div><div><b>Activate</b><i>активируем</i><span>Запускаем синтез нужных коже компонентов&nbsp;— так реализуется основной эффект препарата.</span></div><div><b>Prevent</b><i>предотвращаем</i><span>Превентивно защищаем от&nbsp;оксидативного стресса и&nbsp;ранних возрастных изменений.</span></div></div>
+<div class="bct"><div><p class="k mono">Контакты</p><h2 style="font-size:34px;margin:6px 0 12px">Beauty Alliance</h2><p>ООО «Бьюти Альянс»&nbsp;— эксклюзивный представитель KLAPP в&nbsp;России и&nbsp;Республике Беларусь.</p>
+<div class="btns"><a class="btn red" href="https://klapprussia.ru" target="_blank" rel="noopener">klapprussia.ru</a><a class="btn" href="https://t.me/klappcosmeticsrussia" target="_blank" rel="noopener">Telegram</a></div></div>
+<div class="row"><b>Адрес</b><span>127254, Москва, Огородный проезд, 16/1, стр.&nbsp;4, офис&nbsp;1201</span><b>Телефон</b><span><a href="tel:+74959601436" style="text-decoration:none">+7 (495) 960-14-36</a></span><b>Сайт</b><span>klapprussia.ru</span><b>Telegram</b><span>@klappcosmeticsrussia</span></div></div></section>
 <footer><p>У&nbsp;вашей кожи много талантов. Мы раскроем их.</p><p>KLAPP Pro — приложение, открывающее новые горизонты в&nbsp;работе с&nbsp;KLAPP. Сведения о&nbsp;препаратах справочные.</p></footer></div><script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>try{new QRCode(document.getElementById('qrc'),{text:'https://gru-pro.ru/',width:360,height:360,colorDark:'#111111',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});}catch(e){document.getElementById('qrc').innerHTML='<p style="padding-top:64px;font-family:Roboto Mono,monospace">gru-pro.ru</p>';}
 (function(){if(/iPhone|iPad|iPod/.test(navigator.userAgent||'')){document.querySelectorAll('[data-os]').forEach(function(b){b.click&&b.dataset.os==='ios'&&b.click();});var d=document.getElementById('dl');if(d){d.href='#install';d.textContent='Установить на iPhone';}}})();
